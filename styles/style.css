@@ -64,16 +64,12 @@ fieldset {
 }
 
 .content {
-  max-block-size: 100%;
-  max-inline-size: 100%;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-areas: "result content-details";
-  grid-template-rows: 1fr;
-  grid-template-columns: 2fr 1fr;
-  justify-self: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
   gap: 30px;
-  padding: 133px 0;
+  padding: 133px 30px 133px 30px;
+  align-items: flex-end;
 }
 
 .content__video-card {
@@ -127,15 +123,10 @@ fieldset {
   line-height: 90%;
 }
 
-.result {
-  grid-area: result;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-}
-
 .result__video-container {
   position: relative;
+  min-inline-size: 711px;
+  min-block-size: 386px;
   padding: 0 0 16px 0;
 }
 
@@ -259,7 +250,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 }
 
 .content__details {
-  grid-area: content-details;
   flex-direction: column;
   display: flex;
   gap: 30px;
