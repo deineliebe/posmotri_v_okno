@@ -97,11 +97,11 @@ video:focus,
 }
 
 .search-form__label {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  flex-direction: row;
-  display: flex;
 }
 
 .search-form__label:has(input[type='checkbox']):hover  {
