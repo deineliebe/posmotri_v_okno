@@ -97,8 +97,15 @@ video:focus,
 }
 
 .search-form__label {
-  align-items: flex-start;
+  align-items: center;
+  gap: 5px;
   cursor: pointer;
+  flex-direction: row;
+  display: flex;
+}
+
+.search-form__label:has(input[type='checkbox']):hover  {
+  text-decoration: underline;
 }
 
 .search-form__fieldset-title {
@@ -132,15 +139,13 @@ video:focus,
 }
 
 .search-form__checkbox-list {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
-  gap: 15px;
   min-inline-size: 212px;
 }
 
 .search-form__pseudo-checkbox {
   display: inline-flex;
-  align-items: flex-end;
   outline: 1px solid #fff;
   min-block-size: 17px;
   min-inline-size: 17px;
@@ -154,11 +159,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   outline: 1px solid #fff;
   outline-offset: 1px;
   background-color: #fff;
-}
-
-.search-form__label-text {
-  display: inline-flex;
-  align-items: center;
 }
 
 .button {
