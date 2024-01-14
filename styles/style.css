@@ -138,10 +138,6 @@ video:focus,
   outline-offset: -1px;
 }
 
-.search-form__label-text {
-  display: block;
-}
-
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
