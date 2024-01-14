@@ -218,7 +218,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 324px;
 }
 
