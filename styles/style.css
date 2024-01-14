@@ -104,6 +104,11 @@ video:focus,
   cursor: pointer;
 }
 
+.search-form__label:has(input:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
 .search-form__label:has(input[type='checkbox']):hover  {
   text-decoration: underline;
 }
@@ -131,11 +136,6 @@ video:focus,
 
 .search-form__textfield:active {
   border: 1px solid #fff;
-}
-
-.search-form__label:has(input:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
 }
 
 .search-form__checkbox-list {
