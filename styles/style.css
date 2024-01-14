@@ -104,7 +104,7 @@ video:focus,
   cursor: pointer;
 }
 
-.search-form__label:has(input:focus-visible) {
+.search-form__label:has(input:focus-visible):not(:active) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -134,7 +134,12 @@ video:focus,
 }
 
 .search-form__textfield:active {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+
+.search-form__label-text {
+  display: block;
 }
 
 .search-form__checkbox-list {
@@ -169,6 +174,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   border: 1px solid #fff;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;
@@ -236,7 +242,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 }
 
 .content__video-card-description-container {
-  max-inline-size: 200px;
+  inline-size: 200px;
   max-block-size: inherit;
 }
 
